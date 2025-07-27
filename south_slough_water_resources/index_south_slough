@@ -64,7 +64,7 @@
         but feasibility of remotely sensing eelgrass within the estuary is limited and may be improved by coupling satellite measurements with updated in situ or aerial data. 
          </p>
 
-    <img src="south_slough_water_resources/Study_Area_Map.jpg" alt="Project study area" />
+    <img src="Study_Area_Map.jpg" alt="Project study area" />
 
     <p><strong>Methods:</strong> We used optical data from Landsat 8 OLI, Landsat 9 OLI-2, and Sentinel-2 MSI, and briefly explored sea surface temperature
         from MODIS; however, the spatial resolution was too large for our study area. Using Google Earth Engine (GEE), we extracted water quality parameters 
@@ -72,11 +72,12 @@
         We also conducted a comparison of machine learning algorithms (random forest, support vector machine, and maximum likelihood) to determine which model was the most
         suitable for our goal of identifying eelgrass in our study area. We used Python, R, and ArcGIS Pro to visualize and interpret our results.</p>
 
-    <img src="south_slough_water_resources/Machine_Learning_Comparison_Eelgrass.jpg" alt="Machine learning classifications" />
+    <img src="Machine_Learning_Comparison_Eelgrass.jpg" alt="Machine learning classifications" />
 
     <p><strong>Findings:</strong> Our machine learning classifications revealed that eelgrass identification is inconsistent across algorithms, but 
         support vector machine (SVM) produced the greatest accuracy. Looking further, we found that our SVM model overestimated certain 
-        areas of the estuary, adding extra eelgrass pixels, while in other locations it severely underestimated the number of eelgrass pixels. </p>
+        areas of the estuary, adding extra eelgrass pixels, while in other locations it severely underestimated the number of eelgrass pixels. 
+    <img src="SVM_Zoom_In.jpg"/> </p>
 
     <p><strong>Tools Used:</strong> QGIS, Google Earth Engine, R, Sentinel-2 imagery</p>
 
