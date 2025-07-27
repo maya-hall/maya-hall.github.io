@@ -111,6 +111,13 @@
     width: 140px;
     height: 140px;
   }
+    .divider {
+    float: none;
+    display: block;
+    margin: 0 auto 15px;
+    width: 100px;
+    height: auto;
+  }
 }
     
 
