@@ -7,7 +7,7 @@
       line-height: 1.6;
       margin: 0;
       color: #333;
-      background: #f9f9f9;
+      background: white;
     }
     a {
       color: #007acc;
@@ -32,6 +32,27 @@
     margin: 20px auto; /* Adds space & centers image */
     }
 
+    img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* optional: centers the image */
+    border-radius: 6px; /* optional: adds rounded corners */
+}
+
+.image-row {
+  display: flex;
+  gap: 12px;          /* space between images */
+  justify-content: center; /* center images horizontally */
+  flex-wrap: wrap;    /* allow wrapping on small screens */
+}
+
+.image-row img {
+  max-width: 45%;     /* adjust width to fit two images side by side */
+  height: auto;
+  border-radius: 6px; /* optional rounded corners */
+}
+
     /* Header & nav */
     header {
       background: #9bc4cb;
@@ -49,8 +70,8 @@
     }
     header h1 {
       margin: 0;
-      font-weight: 700;
-      font-size: 1.8rem;
+      font-weight: bold;
+      font-size: 2.8rem;
       cursor: default;
     }
     nav ul {
@@ -98,6 +119,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin-left: 25px;
+  margin-top: -10px; /* adjust this value to move image up */
   border: 3px solid #404d73;
   transition: all 0.3s ease-in-out;
 }
@@ -147,12 +169,15 @@
       color: #555;
     }
 
-    /* Lists */
-    ul.skills-list {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-top: 0;
-    }
+    ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+
+    ul li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
 
     /* Footer */
     footer {

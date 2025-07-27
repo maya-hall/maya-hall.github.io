@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tree Cover & Carbon Loss</title>
+   <link rel="stylesheet" href="../portfoliostyle.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Maya Hall</h1>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="../../index.html">About Me</a></li>
+        <li><a href="../../index.html#projects" class="active">Projects</a></li>
+        <li><a href="../../index.html#experience">Experience</a></li>
+        <li><a href="../../index.html#education">Education</a></li>
+        <li><a href="../../index.html#skills">Skills</a></li>
+        <li><a href="../../index.html#cv">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+  <div class="project-header">
+    <h2 style = "font-size: 2rem;">Tree Cover & Carbon Loss</h2>
+    <p style="font-size: 1.2rem;"><i>Estimating Carbon and Tree Cover Loss in Fairbanks, Alaska</i></p>
+  </div>
+    
+  <div class="project-content">
+    <p><strong>Overview and Methods:</strong> 
+        This mini-project sought to explore tree cover and potential carbon loss between the years of 2000 and 2024 in Fairbanks, Alaska. I obtained 
+        Global Forest Watch tree cover data from GEE and ICESat-2 measurements of biomass from NASA Earthdata Search. Using R and QGIS, I created a 
+        spatial model that calculated carbon loss per pixel. To achieve this calculation, I produced a binary raster of total tree cover loss and 
+        used aboveground biomass to estimate the carbon loss. Ultimately, there was some agreement between the detected tree loss and carbon loss rasters, 
+        but further analysis and additional inputs and data sources would strengthen this mini-project.
+         </p>
+    <div class="image-row">
+    <img src="Forest_Loss_Map.png" alt="Project study area" width="600"/>
+    <img src="Total_Forest_Loss_Year.jpg" alt="Plot of forest loss by year" width="400"/>
+  </div>
+
+    <p><strong>Results:</strong> The forest cover data revealed that certain areas within Fairbanks did experience detectable tree cover loss
+      between 2000 and 2024. Within this time period, my calculations found that Fairbanks lost approximately 845.55 hectares of tree cover. As anticipated, 
+      most of the loss occurred in areas where there had previously been tree canopy (identified in the 2000 forest map data). 
+    <img src="Fairbanks_Maps_treecover_loss.jpg"/> </p>
+
+    <p>The biomass data highlighted various areas that underwent carbon loss; however, it is important to note that I could only obtain biomass data 
+      from 2023, rather than 2024. This mismatch in time periods for the study limits the interpretabilty of the results, but I forged ahead out of 
+      curiosity.
+    <img src="Fairbanks_Maps_loss_carbon.jpg"/> </p>
+
+    <p>The mapped tree cover and carbon loss showed that very select regions of the Fairbanks area had detectable carbon <i>and</i> tree cover loss. 
+      Most of the study area depicted less than 5 Mg C lost between 2000 and 2023. </p>
+      <img src="Fairbanks_Maps_both.jpg"/> </p>
+
+    <p> <strong> Discussion and Conclusion:</strong> A more robust analysis of carbon loss, as well as additional data sources, would expand this project and produce stronger results. Fine-tuning 
+      the data and investigating a larger study area would also perhaps improve the utility and relevancy of this work. The Global Forest Watch data 
+      could be supplemented with optical data and vegetation indices (such as NDVI), while the process of calculating and obtaining carbon loss per 
+      hectare could be built upon to incorporate alternative methods that rely on optical and SAR data. Ultimately, this was a quick project to strengthen 
+      my remote sensing, coding, and GIS skills, so I hope to use what I've learned to produce more robust, reliable, and informative research projects.
+    </p>
+
+    <p><strong>Tools Used:</strong> R, QGIS, GEE</p>
+
+    <p><strong>Keywords:</strong> Remote Sensing, Carbon Loss, Tree Cover, Boreal Forest, Biomass</p>
+
+    <a href="../../index.html#projects">&#8592; Back to Projects</a>
+  </div>
+  </div>
+</main>
+
+<footer>
+  <p style="text-align:center; padding: 20px; color: #666">Contact: <a href="mailto:mayalhall@gmail.com">mayalhall@gmail.com</a> | 
+     GitHub: <a href="https://github.com/maya-hall" target="_blank">maya-hall</a> | 
+     LinkedIn: <a href="https://www.linkedin.com/in/mayalynnhall/" target="_blank">mayalynnhall</a></p>
+</footer>
+
+</body>
+</html>
