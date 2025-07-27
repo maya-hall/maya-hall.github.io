@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>South Slough Water Resources</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <style>
+    .project-header {
+      background: #9bc4cb;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .project-content {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .project-content img {
+      width: 100%;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    nav ul li a.active {
+      background: #404d73;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Maya Hall</h1>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="../../index.html">About Me</a></li>
+        <li><a href="../../index.html#projects" class="active">Projects</a></li>
+        <li><a href="../../index.html#experience">Experience</a></li>
+        <li><a href="../../index.html#education">Education</a></li>
+        <li><a href="../../index.html#skills">Skills</a></li>
+        <li><a href="../../index.html#cv">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="project-header">
+    <h2>South Slough Water Resources</h2>
+    <p>Monitoring Changes in Water Quality to Identify Stressors in Eelgrass Extent Throughout the Coos Estuary</p>
+  </div>
+
+  <div class="project-content">
+    <p><strong>Overview:</strong> 
+        In Oregon's Coos Estuary, the extent of eelgrass <i>(Zostera marina)</i> meadows has decreased substantially since 2005. 
+        To address this concern, we partnered with the South Slough National Estuarine Research Reserve (SSNERR) and the Confederated Tribes of the Coos, Lower Umpqua, and Siuslaw Indians (CTCLUSI)
+        to investigate eelgrass presence, external conditions that may affect eelgrass populations, and test the feasibility of using satellite remote
+        sensing in the Coos Estuary region. We leveraged multispectral satellite imagery, historic aerial data, and machine learning classification techniques
+        to explore eelgrass and water quality between 2016 and 2023. We found that remote sensing techniques are viable for visualizing broad water quality trends,
+        but feasibility of remotely sensing eelgrass within the estuary is limited and may be improved by coupling satellite measurements with updated in situ or aerial data. 
+         </p>
+
+    <img src="south_slough_water_resources/Study_Area_Map.jpg" alt="Project study area" />
+
+    <p><strong>Methods:</strong> We used optical data from Landsat 8 OLI, Landsat 9 OLI-2, and Sentinel-2 MSI, and briefly explored sea surface temperature
+        from MODIS; however, the spatial resolution was too large for our study area. Using Google Earth Engine (GEE), we extracted water quality parameters 
+        and relevant indices, like the Normalized Difference Aquatic Vegetation Index (NDAVI), to build a comprehensive picture of eelgrass status and environmental conditions.
+        We also conducted a comparison of machine learning algorithms (random forest, support vector machine, and maximum likelihood) to determine which model was the most
+        suitable for our goal of identifying eelgrass in our study area. We used Python, R, and ArcGIS Pro to visualize and interpret our results.</p>
+
+    <img src="south_slough_water_resources/Machine_Learning_Comparison_Eelgrass.jpg" alt="Machine learning classifications" />
+
+    <p><strong>Findings:</strong> Our machine learning classifications revealed that eelgrass identification is inconsistent across algorithms, but 
+        support vector machine (SVM) produced the greatest accuracy. Looking further, we found that our SVM model overestimated certain 
+        areas of the estuary, adding extra eelgrass pixels, while in other locations it severely underestimated the number of eelgrass pixels. </p>
+
+    <p><strong>Tools Used:</strong> QGIS, Google Earth Engine, R, Sentinel-2 imagery</p>
+
+    <p><strong>Keywords:</strong> Remote Sensing, Eelgrass, Submerged Aquatic Vegetation, Estuarine Monitoring, Southern Oregon</p>
+
+    <a href="../../index.html#projects">&#8592; Back to Projects</a>
+  </div>
+</main>
+
+<footer>
+  <p style="text-align:center; padding: 20px; color: #666">Contact: <a href="mailto:mayalhall@gmail.com">mayalhall@gmail.com</a> | 
+     GitHub: <a href="https://github.com/maya-hall" target="_blank">maya-hall</a> | 
+     LinkedIn: <a href="https://www.linkedin.com/in/mayalynnhall/" target="_blank">mayalynnhall</a></p>
+</footer>
+
+</body>
+</html>
