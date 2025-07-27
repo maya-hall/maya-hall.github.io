@@ -24,6 +24,13 @@
       margin: auto;
       padding: 20px 0;
     }
+    /* Divider image */
+    .divider {
+    display: block;
+     width: 200px;      /* Adjust width as needed */
+    height: auto;      /* Keeps aspect ratio */
+    margin: 20px auto; /* Adds space & centers image */
+    }
 
     /* Header & nav */
     header {
@@ -80,7 +87,7 @@
     }
     section h2 {
       margin-top: 0;
-      border-bottom: 2px solid #404d73;
+      /*border-bottom: 2px solid #404d73;*/
       padding-bottom: 8px;
     }
 
