@@ -91,16 +91,28 @@
       padding-bottom: 8px;
     }
 
-    /* Profile photo */
-    .profile-photo {
-      float: right;
-      width: 145px;
-      height: 145px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-left: 20px;
-      border: 3px solid #404d73;
-    }
+.profile-photo {
+  float: right;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 25px;
+  border: 3px solid #404d73;
+  transition: all 0.3s ease-in-out;
+}
+
+/* On small screens, center the image and shrink it slightly */
+@media (max-width: 600px) {
+  .profile-photo {
+    float: none;
+    display: block;
+    margin: 0 auto 15px;
+    width: 140px;
+    height: 140px;
+  }
+}
+    
 
     /* Projects grid */
     .projects-grid {
@@ -206,32 +218,25 @@
         <h3>Modeling Flood Risk in Buncombe County, North Carolina</h3>
         <p>Machine learning classification of flood risk zones using topography and land cover data.</p>
       </div>
-      <div class="project-item">
-        <img src="tile_images/BrownWaterAdvisory_HiloBay_2024.jpg" alt="Water Quality Analysis in Hilo, Hawaii" />
-        <h3>Water Quality in Hilo, Hawaii</h3>
-        <p>Geospatial study monitoring water quality indicators using remote sensing and field data.</p>
-      </div>
-      <div <a href="south_slough_water_resources/index_south_slough.html" class="project-item">...</a>
-        <img src="tile_images/Submerged_Aquatic_Veg_SouthSlough_2023.jpg" alt="Eelgrass Remote Sensing, Southern Oregon" />
-        <h3>Eelgrass Remote Sensing, Southern Oregon</h3>
-        <p>Mapping eelgrass habitats using multispectral imagery and classification techniques.</p>
-      <style> .project-item {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  transition: box-shadow 0.3s ease;
-}
-.project-item:hover {
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-} </style>
-      </div>
-      <div class="project-item">
-        <img src="tile_images/Median_SOS_Genus.png" alt="Urban Tree Phenology Thesis Project" />
-        <h3>Urban Tree Phenology Thesis Project</h3>
-        <p>Phenological monitoring of urban trees using time-series digital camera imagery.</p>
-      </div>
-    </div>
-  </section>
+<div class="project-item">
+  <img src="tile_images/BrownWaterAdvisory_HiloBay_2024.jpg" alt="Water Quality Analysis in Hilo, Hawaii" />
+  <h3>Water Quality in Hilo, Hawaii</h3>
+  <p>Geospatial study monitoring water quality indicators using remote sensing and field data.</p>
+</div>
+
+<a href="south_slough_water_resources/index_south_slough.html" class="project-item">
+  <img src="tile_images/Submerged_Aquatic_Veg_SouthSlough_2023.jpg" alt="Eelgrass Remote Sensing, Southern Oregon" />
+  <h3>Eelgrass Remote Sensing, Southern Oregon</h3>
+  <p>Mapping eelgrass habitats using multispectral imagery and classification techniques.</p>
+</a>
+
+<div class="project-item">
+  <img src="tile_images/Median_SOS_Genus.png" alt="Urban Tree Phenology Thesis Project" />
+  <h3>Urban Tree Phenology Thesis Project</h3>
+  <p>Phenological monitoring of urban trees using time-series digital camera imagery.</p>
+</div> 
+</div> <!-- End of projects grid -->
+  </section> <!-- End of projects section-->
 
   <section id="experience">
     <h2>Experience</h2>
