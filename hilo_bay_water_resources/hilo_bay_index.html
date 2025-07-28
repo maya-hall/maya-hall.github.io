@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tree Cover & Carbon Loss</title>
+  <title>Hilo Bay Water Resources</title>
    <link rel="stylesheet" href="../portfoliostyle.css" />
 </head>
 <body>
@@ -27,27 +27,27 @@
 <main>
   <div class="container">
   <div class="project-header">
-    <h2 style = "font-size: 2rem;">Tree Cover & Carbon Loss</h2>
-    <p style="font-size: 1.2rem;"><i>Estimating carbon and tree cover loss in Fairbanks, Alaska</i></p>
+    <h2 style = "font-size: 2rem;">Hilo Bay Water Resources</h2>
+    <p style="font-size: 1.2rem;"><i>Monitoring Water Quality in Hilo Bay, Hawaiʻi to Support Future Community Planning</i></p>
   </div>
     
   <div class="project-content">
-    <p><strong>Overview and Methods:</strong> 
-        This mini-project sought to explore tree cover and potential carbon loss between the years of 2000 and 2024 in Fairbanks, Alaska. I obtained 
-        Global Forest Watch tree cover data from GEE and ICESat-2 measurements of biomass from NASA Earthdata Search. Using R and QGIS, I created a 
-        spatial model that calculated carbon loss per pixel. To achieve this calculation, I produced a binary raster of total tree cover loss and 
-        used aboveground biomass to estimate the carbon loss. Ultimately, there was some agreement between the detected tree loss and carbon loss rasters, 
-        but further analysis and additional inputs and data sources would strengthen this mini-project.
+    <p><strong>Overview:</strong> 
+        I supervised and guided the Hilo Bay Water Resources team during the summer 2024 NASA DEVELOP term. This phenomenal team worked in-pereson 
+        in Hilo, Hawaiʻi to understand the feasibility of using satellite remote sensing to monitor water pollution. The team used Python, 
+        Google Earth Engine, R, and ArcGIS Pro to acquire water quality data between 2013 to 2024. The satellites and sensors that they used included: 
+        Landsat 8 OLI, Landsat 9 OLI-2, Aqua and Terra MODIS, and Sentinel-2 MSI. For parameters, I suggested that the team use measures of 
+        turbidity and chlorophyll-a, coupled with external data like weather events or sewage spills. At the end of their project, the team found that 
+        remote sensing of water quality parameters within Hilo Bay is feasible, and that, depending on data availability, there is good alignment between 
+        the occurrence of pollution events (brown water advisories) and turbidty and chlorophyll-a pixel presence. 
          </p>
-    <div class="image-row">
-    <img src="Forest_Loss_Map.png" alt="Project study area" width="600"/>
-    <img src="Total_Forest_Loss_Year.jpg" alt="Plot of forest loss by year" width="400"/>
-  </div>
 
-    <p><strong>Results:</strong> The forest cover data revealed that certain areas within Fairbanks did experience detectable tree cover loss
-      between 2000 and 2024. Within this time period, my calculations found that Fairbanks lost approximately 845.55 hectares of tree cover. As anticipated, 
-      most of the loss occurred in areas where there had previously been tree canopy (identified in the 2000 forest map data). 
-    <img src="Fairbanks_Maps_treecover_loss.jpg"/> </p>
+    <p><strong>Results:</strong> Here are some examples of the team's results. For the full methodology and end products, please download their 
+        project presentation and technical report (provided below).</p>
+        
+    <p>In this first image, we see a comparison between dates without a brown water advisory and dates with the advisory. The satellite data show 
+        a corresponding turbidity response during dates with active brown water advisories. 
+    <img src="BrownWaterAdvisory_HiloBay_2024.jpg"/> </p>
 
     <p>The biomass data highlighted various areas that underwent carbon loss; however, it is important to note that I could only obtain biomass data 
       from 2023, rather than 2024. This mismatch in time periods for the study limits the interpretabilty of the results, but I forged ahead out of 
@@ -69,7 +69,8 @@
 
     <p><strong>Keywords:</strong> Remote Sensing, Carbon Loss, Tree Cover, Boreal Forest, Biomass</p>
 
-    <p><strong> Project Contributors:</strong> Maya Hall </p>
+    <p><strong> Project Contributors:</strong> Dani Sonobe <i>(project lead)</i>, Ashley Clark <i>(team member)</i>, Kandi Shimabukuro 
+        <i> (team member)</i>, Samantha White-Murillo <i>(team member)</i>, Maya Hall (supervisor) </p>
 
     <a href="../../index.html#projects">&#8592; Back to Projects</a>
   </div>

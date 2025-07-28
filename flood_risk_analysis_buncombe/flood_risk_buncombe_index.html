@@ -47,8 +47,8 @@
 
     <p><strong>Results:</strong> The initial random forest model performed well on "no flood" pixels (assigned as 0), but did not accurately classify 
         "yes flood" pixel presence (assigned as 1). The out-of-bag error for this first iteration was 2.25%, and the confusion matrix revealed that 
-        very few "yes flood" pixels were properly classified.
-    <img src="Flood_Risk_Maps_Unbalanced.jpg"/> </p>
+        very few "yes flood" pixels were properly classified. Correspondingly, the most impactful variable was distance to streams. 
+    <img src="Flood_Risk_Maps_Unbalanced.jpg" width="600"/> </p>
 
     <p>Upon further investigation, the proportion of "no flood" pixels was much higher than "yes flood" pixels. Thus, we employed several dataset balancing 
         techniques to account for this imbalance. The first method involved bringing down the number of 0 pixels, so we randomly selected rows to reduce. 
@@ -57,13 +57,13 @@
         than pixels that contained a 0. This, however, did not yield very noticable improvements in model performance. We ultimately moved forward with 
         the reduction of randomly selected 0 pixels. The result of the balanced predicted flood risk can be seen below. 
 
-    <img src="Flood_Risk_Maps_Balanced.jpg"/> </p>
+    <img src="Flood_Risk_Maps_Balanced.jpg" width="600"/> </p>
 
     <p> <strong> Discussion and Conclusion:</strong> More results coming soon!</p>
 
     <p><strong>Tools Used:</strong> R, QGIS, GEE</p>
 
-    <p><strong>Keywords:</strong> Remote Sensing, Carbon Loss, Tree Cover, Boreal Forest, Biomass</p>
+    <p><strong>Keywords:</strong> Flood Risk, Random Forest, Machine Learning, Remote Sensing, GIS</p>
 
     <p> <strong>Project Contributors:</strong> Katie Miller <i>(SVM, data acquisition, code refinement)</i>, Truman Anarella <i>(PCA, 
         data acquisition, code refinement)</i>, and Maya Hall <i>(random forest, data acquisition, code refinement)</i> </p>
