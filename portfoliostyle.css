@@ -141,6 +141,33 @@
     height: auto;
   }
 }
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 8px; /* reduced gap between images */
+  max-width: 360px; /* slightly wider grid to allow bigger images */
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.experience-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);*/
+  object-fit: contain;
+  padding: 2px; /* optional slight inner spacing */
+}
+
+@media (max-width: 600px) {
+  .experience-grid {
+    float: none;
+    grid-template-columns: repeat(2, 1fr); /* Stack into 2 columns on mobile */
+    margin: 0 auto 20px;
+  }
+}
     
 
     /* Projects grid */
