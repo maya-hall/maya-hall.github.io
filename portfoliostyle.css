@@ -256,4 +256,48 @@
   object-fit: cover;    /* crops neatly without distortion */
   border-radius: 4px;
 }
-  
+ 
+figure {
+  display: inline-block;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.4rem;
+}
+
+.study-area {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* space between text and image */
+  margin-bottom: 2rem;
+}
+
+.study-area .study-map {
+  width: 550px;       /* smaller than before so it fits alongside text */
+  height: auto;
+  border-radius: 0px; /* optional rounded corners */
+  flex-shrink: 0;     /* prevent the image from shrinking */
+}
+
+.study-area p {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.flood-risk-table {
+  overflow: auto; /* Clearfix to contain the float */
+  margin-bottom: 2rem;
+}
+
+.flood-risk-table .accuracy-table {
+  float: right;          /* Move the image to the right */
+  width: 200px;
+  margin-left: 15px;      /* Space between image and text */
+}
+
+.accuracy-table p {
+  line-height: 1.6;
+}
